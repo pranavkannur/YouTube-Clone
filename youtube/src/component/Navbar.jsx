@@ -10,24 +10,31 @@ import Avatar from 'react-avatar';
 
 const Navbar = () => {
   return (
-    <div className='flex ju items-center w-100'>
-      <div>
-        <button className='flex items-center hover:cursor-pointer rounded-s-full hover:bg-gray-300 m-0 p-0 '>
-          <IoMenuOutline size={'30'} />
-        </button>
-      </div>
+  
       <div className='flex justify-between items-center p-2 '>
+        <div className='flex items-center gap-4'>
+          <div>
+          <button className='flex items-center hover:cursor-pointer rounded-s-full hover:bg-gray-300 m-0 p-0 '>
+            <IoMenuOutline size={'30'} />
+          </button>
+        </div>
         <div className='flex items-center p-2 hover:cursor-pointer pl-0 ml-0'>
           <div className='text-red-500'>
             <FaYoutube size={'40px'} />
           </div>
           <h1 className='text-xl'>YouTube</h1>
         </div>
+        </div>
         <div className='flex justify-items-end w-[35%] p-2 rounded-full shadow-md border-[1px] border-gray-400'>
           <input type="text" name="Search" id="search bra" className='w-[95%]' />
           <button className='hover:cursor-pointer border-l-[1px] border-gray-400'>
             <IoSearch size={'20'} className='m-1' />
           </button>
+          <div>
+            <button className='hover:cursor-pointer rounded-full bg-gray-200 hover:bg-gray-300 p-2'>
+              <FaMicrophone size={'20px'} />
+            </button>
+          </div>
         </div>
         <div className='flex items-center gap-4'>
           <div>
@@ -50,9 +57,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-    </div>
-   
+    
+
   )
 }
 
-      export default Navbar
+export default Navbar
